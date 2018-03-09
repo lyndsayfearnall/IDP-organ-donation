@@ -12,6 +12,7 @@ After cloning the repository run
 	npm install 
 	npm run start
 ```
+Visit localhost:5000 an enjoy!
 
 ## Resources 
 -[Express.js](https://expressjs.com/en/4x/api.html)
