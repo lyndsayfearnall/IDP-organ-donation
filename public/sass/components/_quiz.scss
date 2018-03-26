@@ -1,0 +1,16 @@
+
+.quiz-wrapper{
+	margin-left: 25px;
+	margin-right: 25px;
+	padding-bottom: 25px;
+}
+
+.quiz-text {
+	color: #30bdbc;
+	&#quiz-title {
+		margin-top: 25px;
+	}
+	&#quiz-link {
+		text-decoration: underline;	
+	}
+}

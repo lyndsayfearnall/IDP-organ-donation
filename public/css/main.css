@@ -1,0 +1,178 @@
+@font-face {
+  font-family: multicolore;
+  src: url(../font/multicolore.ttf); }
+.hidden {
+  display: none; }
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+h1, h2, p {
+  color: white;
+  text-align: center; }
+
+h1 {
+  font-size: 21px;
+  font-family: multicolore; }
+
+p {
+  font-size: 16px;
+  font-family: Lato; }
+
+.nav-wrapper {
+  position: absolute;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 10px;
+  width: 85%;
+  z-index: 10; }
+
+.ham-menu {
+  width: 40px;
+  height: 3px;
+  background-color: white;
+  margin: 8px 0; }
+
+.ham-menu-wrapper {
+  float: right;
+  margin-top: 5%; }
+
+.home-wrapper {
+  /*position: absolute;
+  top: 0;
+  left: 0;*/
+  background: #39dedd;
+  height: 100vh;
+  /*width: 100%;*/
+  overflow: hidden;
+  /*z-index: -1;
+  margin-left: 25px;
+  margin-right: 25px;*/ }
+
+/* -----ORGAN AND CONFETTI----- */
+#mobile-conffetti {
+  position: absolute;
+  width: 100%;
+  margin-top: 10px; }
+
+#organ-group {
+  position: relative;
+  width: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 15%; }
+
+#home-text-wrapper {
+  top: 20%;
+  position: relative;
+  margin-left: 25px;
+  margin-right: 25px; }
+
+#donor-button {
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 175px;
+  height: 35px;
+  border-radius: 8px; }
+
+#donor-button p {
+  color: black;
+  font-size: 13px;
+  padding-top: 7px;
+  font-weight: 700; }
+
+#donor-text {
+  color: red; }
+
+/*.organ-wrapper {
+  position: relative;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 300px;
+  z-index: 1000; 
+}
+
+.organ-wrapper img:first-child {
+  transform: rotate(-40deg);
+  left: 30px;
+  top: 120px; 
+}
+
+.organ-wrapper img:nth-child(2) {
+  transform: rotate(-10deg);
+  top: 20px;
+}
+
+.organ-wrapper img:last-child {
+  transform: rotate(40deg);
+  top: 100px;
+  }
+
+.organ-wrapper img {
+  position: relative;
+  height: 200px; 
+}
+
+.dot {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5; 
+}*/
+.video-wrapper {
+  margin-left: 25px;
+  margin-right: 25px; }
+
+.video-test {
+  color: #393939; }
+  .video-test#video-title {
+    margin-top: 15px; }
+
+video {
+  width: 100%; }
+
+.faqs-wrapper {
+  position: relative; }
+
+#hair-character {
+  position: relative; }
+
+.faqs-text-wrapper {
+  position: absolute;
+  bottom: 3%;
+  margin-left: 25px;
+  margin-right: 25px;
+  line-height: 1.2; }
+
+.faqs-title {
+  font-size: 20px; }
+
+.quiz-wrapper {
+  margin-left: 25px;
+  margin-right: 25px;
+  padding-bottom: 25px; }
+
+.quiz-text {
+  color: #30bdbc; }
+  .quiz-text#quiz-title {
+    margin-top: 25px; }
+  .quiz-text#quiz-link {
+    text-decoration: underline; }
+
+.register-wrapper {
+  background: linear-gradient(to right, #40dedd, #30bdbc);
+  height: 300px;
+  position: absolute; }
+
+.register-text-wrapper {
+  margin-left: 25px;
+  margin-right: 25px;
+  padding-top: 50px; }
+
+/*# sourceMappingURL=main.css.map */

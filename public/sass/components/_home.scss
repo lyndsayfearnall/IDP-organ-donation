@@ -1,0 +1,95 @@
+
+.home-wrapper {
+    /*position: absolute;
+    top: 0;
+    left: 0;*/
+    background: #39dedd;
+    height: 100vh;
+    /*width: 100%;*/
+    overflow: hidden;
+    /*z-index: -1;
+    margin-left: 25px;
+    margin-right: 25px;*/
+}
+
+/* -----ORGAN AND CONFETTI----- */
+
+#mobile-conffetti {
+  position: absolute;
+  width: 100%;
+  margin-top: 10px;
+}
+
+#organ-group {
+  position: relative;
+  width: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 15%;
+}
+
+#home-text-wrapper {
+  top: 20%;
+  position: relative;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+#donor-button{
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 175px;
+  height: 35px;
+  border-radius: 8px;
+}
+
+#donor-button p {
+  color: black;
+  font-size: 13px;
+  padding-top: 7px;
+  font-weight: 700;
+}
+
+#donor-text {
+  color: red;
+}
+
+/*.organ-wrapper {
+  position: relative;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 300px;
+  z-index: 1000; 
+}
+
+.organ-wrapper img:first-child {
+  transform: rotate(-40deg);
+  left: 30px;
+  top: 120px; 
+}
+
+.organ-wrapper img:nth-child(2) {
+  transform: rotate(-10deg);
+  top: 20px;
+}
+
+.organ-wrapper img:last-child {
+  transform: rotate(40deg);
+  top: 100px;
+  }
+
+.organ-wrapper img {
+  position: relative;
+  height: 200px; 
+}
+
+.dot {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5; 
+}*/

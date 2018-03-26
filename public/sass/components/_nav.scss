@@ -1,0 +1,21 @@
+
+.nav-wrapper {
+  position: absolute;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 10px;
+  width: 85%;
+  z-index: 10;
+}
+
+.ham-menu {
+  width: 40px;
+  height: 3px;
+  background-color: white;
+  margin: 8px 0;
+}
+
+.ham-menu-wrapper {
+  float: right;
+  margin-top: 5%;
+}
