@@ -6,6 +6,7 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0; 
+  overflow-x: hidden;
 }
 
 h1, h2, p{
@@ -21,4 +22,28 @@ h1 {
 p {
   font-size: 16px;
   font-family: Lato;
+}
+
+@media screen and (min-width: 1024px) {
+
+h1 {
+  font-size: 32px;
+}
+
+p {
+  font-size: 18px;
+}
+
+}
+
+@media screen and (min-width: 1900px) {
+
+h1 {
+  font-size: 36px;
+}
+
+p {
+  font-size: 21px;
+}
+
 }

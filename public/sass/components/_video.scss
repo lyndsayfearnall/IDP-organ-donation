@@ -1,11 +1,11 @@
 
-.video-wrapper {
+.video-text-wrapper {
 	margin-left: 25px;
 	margin-right: 25px;
 
 }
 
-.video-test {
+.video-text {
 	color: #393939; 
 	&#video-title {
 		margin-top: 15px;
@@ -14,4 +14,65 @@
 
 video {
 	width: 100%;
+	bottom: 0;
+	display: block;
 }
+
+@media screen and (min-width: 535px) {
+
+.video-text#video-title {
+	margin-top: 25px;
+}
+
+.video-text {
+	margin-bottom: 25px;
+}
+
+}
+
+@media screen and (min-width: 1024px) {
+
+.video-text-wrapper {
+	position: absolute;
+	width: 40%;
+	right: 0;
+	z-index: 5;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-right: 50px;
+	& .video-text {
+		color: white;
+		text-align: right;
+	}
+}
+
+.video-wrapper {
+	position: relative;
+}
+
+.video-wrapper #video-overlay {
+	height: 100%;
+    width: 100%;
+    background: #516273;
+    position: absolute;
+    z-index: 2;
+    opacity: .7;
+}
+
+}
+
+@media screen and (min-width: 1280px) {
+
+.video-text-wrapper {
+	width: 35%;
+}
+
+}
+
+@media screen and (min-width: 1900px) {
+
+.video-text-wrapper {
+    width: 30%;
+}
+}
+

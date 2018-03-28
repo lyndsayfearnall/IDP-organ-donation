@@ -14,13 +14,18 @@
 
 /* -----ORGAN AND CONFETTI----- */
 
+#browser-conffetti {
+  display: none;
+}
+
 #mobile-conffetti {
   position: absolute;
   width: 100%;
   margin-top: 10px;
+  display: block;
 }
 
-#organ-group {
+.organ-group {
   position: relative;
   width: 85%;
   left: 50%;
@@ -37,7 +42,7 @@
 
 #donor-button{
   background-color: white;
-  position: absolute;
+  position: relative;
   left: 50%;
   transform: translateX(-50%);
   width: 175px;
@@ -52,7 +57,7 @@
   font-weight: 700;
 }
 
-#donor-text {
+#donor-red-text {
   color: red;
 }
 
@@ -93,3 +98,129 @@
   background-size: cover;
   z-index: 5; 
 }*/
+
+@media screen and (min-width: 375px) {
+
+#home-text-wrapper {
+  top: 25%;
+}
+
+}
+
+// MEDIA QUERY 535
+
+@media screen and (min-width: 535px) {
+
+.organ-group {
+    width: 55%;
+    top: 100px;
+}
+
+#browser-conffetti {
+  position: absolute;
+  width: 80%;
+  margin-top: 70px;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#mobile-conffetti {
+  display: none;
+}
+
+}
+
+@media screen and (min-width: 765px) {
+
+#browser-conffetti {
+  width: 70%;
+  margin-top: 80px;
+}
+
+.organ-group {
+  width: 350px;
+  top: 110px;
+}
+
+#home-text-wrapper {
+  top: 25%;
+  margin: 0 auto;
+  width: 70%;
+}
+
+}
+
+@media screen and (min-width: 1024px) {
+
+#browser-conffetti {
+  width: 60%;
+}
+
+.organ-group {
+  width: 35%;
+  top: 120px;
+}
+
+#home-text-wrapper {
+  width: 65%;
+  top: 25%;
+  & h1 {
+    font-size: 36px;
+    margin-top: 35px;
+  }
+  & p {
+    font-size: 18px;
+    margin-bottom: 35px;
+  }
+}
+
+#donor-text {
+  font-size: 12px !important;
+}
+
+}
+
+@media screen and (min-width: 1279px) {
+
+#browser-conffetti {
+  width: 55%;
+}
+
+.organ-group {
+  width: 30%;
+  top: 140px;
+}
+
+#home-text-wrapper {
+  width: 50%;
+  top: 27%;
+}
+
+}
+
+@media screen and (min-width: 1900px) {
+
+#browser-conffetti {
+    width: 45%;
+}
+
+.organ-group {
+    width: 23%;
+    top: 170px;
+}
+
+#home-text-wrapper {
+    width: 35%;
+}
+
+#donor-button {
+  width: 275px;
+  height: 45px;
+  & #donor-text {
+    font-size: 16px !important;
+    padding-top: 9px;
+  }
+}
+
+}

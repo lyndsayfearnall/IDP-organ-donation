@@ -5,6 +5,7 @@
 
 #hair-character {
 	position: relative;
+	display: block;
 }
 
 .faqs-text-wrapper {
@@ -17,4 +18,65 @@
 
 .faqs-title {
 	font-size: 20px;
+}
+
+#browser-hair-character {
+	display: none;
+}
+
+@media screen and (min-width: 375px) {
+
+#hair-character {
+	width: 100vw;
+}
+
+}
+
+@media screen and (min-width: 535px) {
+
+#browser-hair-character {
+	display: block;
+	width: 100vw;
+}
+
+#hair-character {
+	display: none;
+}
+
+.faqs-text-wrapper {
+	width: 45%;
+	bottom: unset;
+}
+
+}
+
+@media screen and (min-width: 575px) {
+.faqs-text-wrapper {
+	top: 50%;
+	transform: translateY(-50%);
+	margin-left: 50px;
+	& .faqs-title {
+	font-size: 32px;
+	text-align: left;
+	} & p {
+		text-align: left;
+	}	
+}
+
+}
+
+@media screen and (min-width: 1280px) {
+
+.faqs-text-wrapper {
+	width: 35%;
+	line-height: normal;
+}
+
+}
+
+@media screen and (min-width: 1900px) {
+
+.faqs-text-wrapper {
+    width: 30%;
+}
 }

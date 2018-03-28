@@ -3,6 +3,7 @@
 	margin-left: 25px;
 	margin-right: 25px;
 	padding-bottom: 25px;
+	padding-top: 25px;
 }
 
 .quiz-text {
@@ -12,5 +13,70 @@
 	}
 	&#quiz-link {
 		text-decoration: underline;	
+		cursor: pointer;
 	}
+}
+
+@media screen and (min-width: 535px) {
+
+#organ-group-quiz {
+	top: 0;
+}
+
+}
+
+@media screen and (min-width: 1024px) {
+
+.quiz-text-wrapper {
+	float: left;
+	width: 50%;
+	top: 50%;
+	transform: translateY(-50%);
+	position: relative;
+		& .quiz-text {
+			text-align: left;
+		}
+}
+
+#organ-group-quiz {
+	position: unset;
+	float: right;
+	left: 0;
+	transform: unset;
+	top: 50%;
+	transform: translateY(-50%);
+	position: relative;
+}
+
+.quiz-wrapper {
+	height: 350px;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+
+}
+
+
+@media screen and (min-width: 1280px) {
+
+.quiz-wrapper {
+    height: 425px;
+}
+
+}
+
+@media screen and (min-width: 1900px) {
+
+.quiz-wrapper {
+    height: 625px;
+}
+
+#organ-group-quiz {
+	width: 30%;
+}
+
+.quiz-text-wrapper {
+	width: 40%;
+}
+
 }
