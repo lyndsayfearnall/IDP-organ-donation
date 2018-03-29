@@ -48,6 +48,10 @@
   <!-- VIDEO PAGE -->
 
   <div class="video-wrapper">
+    <!-- <div class="video-play-button"> -->
+      <p class="video-play-button video-button">PLAY</p>
+    <!-- </div> -->
+
     <div class="video-text-wrapper">
       <h1 id="video-title" class="video-text">Sign up now to save <br> someone later</h1>
       <p class="video-text">There are more than 1,500 people in Ontario that are currently waiting for organ transplants that will save their lives. Registering as an organ donor is simple, fast, and generous. Curious about how it works? We can walk you through the process.</p>
@@ -57,7 +61,13 @@
       <video autoplay muted loop>
         <source src="../videos/Organ_donation_video_preview.mp4" type="video/mp4">
       </video>
-    <!-- </div> -->
+
+      <div class="full-video-wrapper">
+        <img class="video-button" id="video-close" src="../images/close.svg">
+          <video class="full-video" autoplay muted controls>
+            <source src="../videos/Organ_donation_video_preview.mp4" type="video/mp4">
+          </video>
+      </div>
   </div>
   <!-- VIDEO PAGE ENDS -->
 

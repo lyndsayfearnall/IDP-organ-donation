@@ -210,7 +210,11 @@ p {
       margin-bottom: 35px; }
 
   #donor-text {
-    font-size: 12px !important; } }
+    font-size: 16px !important; }
+
+  #donor-button {
+    width: 225px;
+    height: 45px; } }
 @media screen and (min-width: 1279px) {
   #browser-conffetti {
     width: 55%; }
@@ -253,6 +257,12 @@ video {
   bottom: 0;
   display: block; }
 
+#video-play-button {
+  display: none; }
+
+.full-video-wrapper {
+  display: none; }
+
 @media screen and (min-width: 535px) {
   .video-text#video-title {
     margin-top: 25px; }
@@ -270,8 +280,41 @@ video {
     margin-right: 50px; }
     .video-text-wrapper .video-text {
       color: white;
-      text-align: right; }
+      text-align: right; } }
+@media screen and (min-width: 1024px) and (min-width: 820px) {
+  .full-video {
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    /* margin: 0 auto; */
+    top: 50%;
+    transform: translate(-50%, -50%); }
 
+  .full-video-wrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    opacity: 0;
+    transition: all .5s ease;
+    left: 100%;
+    z-index: 100;
+    background-color: rgba(33, 38, 43, 0.96);
+    display: block; }
+
+  .full-video-active {
+    opacity: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    position: absolute; }
+
+  #video-close {
+    position: absolute;
+    right: 50px;
+    top: 25px;
+    width: 30px;
+    cursor: pointer; } }
+@media screen and (min-width: 1024px) {
   .video-wrapper {
     position: relative; }
 
@@ -281,7 +324,16 @@ video {
     background: #516273;
     position: absolute;
     z-index: 2;
-    opacity: .7; } }
+    opacity: .7; }
+
+  .video-play-button {
+    display: block;
+    position: absolute;
+    z-index: 15;
+    margin-left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer; } }
 @media screen and (min-width: 1280px) {
   .video-text-wrapper {
     width: 35%; } }
