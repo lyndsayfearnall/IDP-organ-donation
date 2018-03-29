@@ -18,7 +18,7 @@ video {
 	display: block;
 }
 
-#video-play-button {
+.video-play-button {
 	display: none;
 }
 
@@ -36,22 +36,6 @@ video {
 	margin-bottom: 25px;
 }
 
-}
-
-@media screen and (min-width: 1024px) {
-
-.video-text-wrapper {
-	position: absolute;
-	width: 40%;
-	right: 0;
-	z-index: 5;
-	top: 50%;
-	transform: translateY(-50%);
-	margin-right: 50px;
-	& .video-text {
-		color: white;
-		text-align: right;
-	}
 }
 
 @media screen and (min-width: 820px) {
@@ -81,7 +65,7 @@ video {
     left: 0;
     top: 0;
     height: 100%;
-    position: absolute;
+    position: fixed;
 }
 
 #video-close {
@@ -92,6 +76,102 @@ video {
     cursor: pointer;
 }
 
+.play-button {
+	width: 35px;
+	height: auto;	
+}
+
+.video-play-button {
+	left: 15%;
+}
+
+// Video Button Animation
+
+$animation:0.3s all ease;
+  
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.rotate {
+	border-radius: 5px;
+	border: 1px #fff solid;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+// .shape {
+//   stroke-dasharray: 140 540;
+//   stroke-dashoffset: -474;
+//   stroke-width: 25px;
+//   fill: transparent;
+//   stroke: #35dcda;
+//   border-bottom: 5px solid black;
+//   transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+// }
+
+// .rotate:hover .shape {
+//   stroke-width: 8px;
+//   stroke-dashoffset: 0;
+//   stroke-dasharray: 760;
+// }
+
+
+
+.video-play-button {
+  position:relative;
+  &:after {
+    transition:$animation;
+    content:'';
+    position:absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    border-radius:1px;
+    border:3px solid #fff;
+  }
+  &:before {
+    content:'';
+    position:absolute;
+    border-radius:3px;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    z-index:-1;
+  }
+  &:hover {
+    &:after {
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
+
+}
+
+
+
+}
+
+@media screen and (min-width: 1024px) {
+
+.video-text-wrapper {
+	position: absolute;
+	width: 40%;
+	right: 0;
+	z-index: 5;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-right: 50px;
+	& .video-text {
+		color: white;
+		text-align: right;
+	}
 }
 
 // .full-video {
