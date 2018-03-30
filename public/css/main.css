@@ -103,7 +103,13 @@ p {
 li {
   margin-bottom: 25px; }
 
+button:focus {
+  outline: unset; }
+
 @media screen and (min-width: 1024px) {
+  .menu-text-con {
+    list-style-type: none; }
+
   .hamburger {
     display: none !important; }
 
@@ -172,11 +178,11 @@ li {
 #donor-button p {
   color: black;
   font-size: 13px;
-  padding-top: 7px;
+  padding-top: 10px;
   font-weight: 700; }
 
 #donor-red-text {
-  color: red; }
+  color: #f71c1c; }
 
 /*.organ-wrapper {
   position: relative;
@@ -335,13 +341,14 @@ video {
   .full-video-wrapper {
     height: 100%;
     width: 100%;
-    position: relative;
+    position: fixed;
     opacity: 0;
     transition: all .5s ease;
     left: 100%;
     z-index: 100;
     background-color: rgba(33, 38, 43, 0.96);
-    display: block; }
+    display: block;
+    top: 0; }
 
   .full-video-active {
     opacity: 1;
@@ -544,7 +551,7 @@ video {
     width: 40%; } }
 .register-wrapper {
   background: linear-gradient(to right, #40dedd, #30bdbc);
-  height: 300px;
+  height: 325px;
   position: absolute;
   width: 100%; }
 
@@ -552,6 +559,18 @@ video {
   margin-left: 25px;
   margin-right: 25px;
   padding-top: 50px; }
+
+.sm-icon {
+  width: 8%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 15px;
+  cursor: pointer; }
+
+.sm-icon-wrapper {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); }
 
 @media screen and (min-width: 535px) {
   .register-text-wrapper {

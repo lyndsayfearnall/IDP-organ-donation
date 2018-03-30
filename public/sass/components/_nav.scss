@@ -69,8 +69,25 @@ li {
   margin-bottom: 25px;
 }
 
+#logo {
+  // position: fixed;
+  // cursor: pointer;
+}
+
+button:focus {
+  outline: unset;
+}
+
 
 @media screen and (min-width: 1024px) {
+
+.menu-text-con {
+   list-style-type: none;
+}
+
+.browser-menu-text {
+  // float: left;
+}
 
 .hamburger {
   display: none !important;

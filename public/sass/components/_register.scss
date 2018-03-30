@@ -1,7 +1,7 @@
 
 .register-wrapper {
 	background: linear-gradient(to right, #40dedd , #30bdbc);
-	height: 300px;
+	height: 325px;
 	position: absolute;
 	width: 100%;
 }
@@ -15,6 +15,20 @@
 // #register-title {
 // 		margin-top: 50px;
 // }
+
+.sm-icon {
+	width: 8%;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-left: 15px;
+	cursor: pointer;
+}
+
+.sm-icon-wrapper {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
 
 @media screen and (min-width: 535px) {
 
