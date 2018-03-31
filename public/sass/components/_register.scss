@@ -17,7 +17,7 @@
 // }
 
 .sm-icon {
-	width: 8%;
+	width: 15%;
 	margin-top: 25px;
 	margin-bottom: 25px;
 	margin-left: 15px;
@@ -25,9 +25,17 @@
 }
 
 .sm-icon-wrapper {
-	position: relative;
-	left: 50%;
-	transform: translateX(-50%);
+	// position: relative;
+	// left: 50%;
+	// transform: translateX(-50%);
+	width: 100%;
+}
+
+.sm-icon-con {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
 }
 
 @media screen and (min-width: 535px) {
@@ -50,6 +58,10 @@
 
 .register-text-wrapper {
 	width: 50%;
+}
+
+.sm-icon-con {
+	width: 30%;
 }
 
 }
