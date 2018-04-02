@@ -130,3 +130,50 @@ function smoothScroll(e) {
 	});
 
 }
+
+
+// ***** faqs scroll up animation ***** //
+
+var scrollpos = window.scrollY;
+var hairScroll = document.querySelector("#hair");
+var hobbyScroll = document.querySelector("#hobby");
+var marathonScroll = document.querySelector("#marathon");
+var partyScroll = document.querySelector("#party");
+
+  function add_class_on_scroll() {
+  	// console.log("hey");
+      hairScroll.classList.add("animated", "slideInUp");
+      hairScroll.style.opacity = "1";
+
+      hobbyScroll.classList.add("animated", "slideInUp");
+      hobbyScroll.style.opacity = "1";
+
+      marathonScroll.classList.add("animated", "slideInUp");
+      marathonScroll.style.opacity = "1";
+
+      partyScroll.classList.add("animated", "slideInUp");
+      partyScroll.style.opacity = "1";
+  }
+
+  window.addEventListener('scroll', function(){ 
+      scrollpos = window.scrollY;
+      if(scrollpos > 1111){
+          add_class_on_scroll();
+      }
+
+  });
+
+// ***** Scroll Faqs Animation ***** //
+inView.offset(200);
+
+var $target = $('.faqs-wrapper');
+inView('.faqs-content-con').on('enter', function(el){
+  var color = $(el).attr('data-background-color');
+  $target.css('background-color', color );
+});
+
+// var target = document.querySelector('.faqs-wrapper');
+// inView('.faqs-content-con').on('enter', function(el) {
+// 	var color = document.querySelectorAll(el).attr('data-background-color');
+// 	target.css('background-color', color );
+// });
