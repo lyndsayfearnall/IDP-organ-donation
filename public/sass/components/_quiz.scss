@@ -35,7 +35,7 @@
 	z-index: 600;
 	top: 0;
 	opacity: 0;
-    transition: left .5s ease;
+    transition: all .5s ease;
     left: 100%;
 }
 
@@ -45,11 +45,12 @@
     top: 0;
     height: 100%;
     position: fixed;
+    z-index: 700;
 }
 
 .quiz-title {
 	color: #36dedc;
-	margin-bottom: 25px;
+	margin-bottom: 50px;
 }
 
 .quiz-q-wrapper {
@@ -60,6 +61,7 @@
 	transition: left .5s ease;
     left: 100%;
     width: 100vw;
+    z-index: 3;
 }
 
 .active {
@@ -127,6 +129,92 @@ input {
 	transform: translate(-50%, -50%);
 }
 
+.quiz-text-con {
+	margin-top: 25px;
+}
+
+// ***** Quiz Result Pages ***** //
+
+.active-result {
+	opacity: 1 !important;
+    left: 0 !important;
+    top: 0;
+    // height: 100vh;
+    position: absolute;
+    z-index: 700;
+}
+
+.quiz-result-wrapper {
+	background: white;
+	height: 100vh;
+	position: fixed;
+	// z-index: 600;
+	top: 0;
+	opacity: 0;
+	transition: left .5s ease;
+	left: 100%;
+}
+
+.result-con {
+	position: relative;
+}
+
+.result-text {
+	color: #36dedc;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+#quiz-result-title {
+	margin-top: 25px;
+}
+
+#result-share {
+	font-weight: 700;
+	// text-decoration: underline;
+}
+
+.mobile-quiz-confetti {
+	position: absolute;
+	top: 0;	
+	width: 100%;
+}
+
+.quiz-confetti {
+	display: none;
+}
+
+.organ-result {
+	position: relative;
+	z-index: 100;
+	// width: 40%;
+	margin: 0 auto;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+#organ-heart {
+	width: 40%;
+}
+
+#organ-liver {
+	width: 55%;
+}
+
+#organ-lungs {
+		width: 55%;
+	}
+
+.browser-quiz-title {
+	display: none;
+}
+
+.mobile-quiz-result-title {
+	padding-top: 25px;
+}
+
 @media screen and (min-width: 535px) {
 
 #organ-group-quiz {
@@ -135,6 +223,14 @@ input {
 
 .quiz-active {
 	width: 100vw;
+}
+
+#organ-heart {
+	width: 25%;
+}
+
+#organ-lungs #organ-liver {
+	width: 40% !important;
 }
 
 }
@@ -148,9 +244,71 @@ input {
 	transform: translateX(-50%);
 }
 
+.mobile-quiz-confetti {
+	display: none;
+}
+
+.quiz-confetti {
+	display: block;
+	position: fixed;
+	top: 0;
+	// width: 100%;
+	height: 70%;
+	left: 35%;
+	z-index: 1;
+
+}
+
 }
 
 @media screen and (min-width: 1024px) {
+
+.quiz-confetti {
+	height: 100%;
+}
+
+.organ-result {
+	// width: 35% !important;
+	right: -40%;
+	position: absolute;
+}
+
+#organ-heart {
+	width: 25%;
+}
+
+#organ-lungs {
+	width: 35%;
+}
+
+#organ-liver {
+	width: 35%;
+}
+
+.middle-con {
+	width: 100%;
+	z-index: 10;
+	top: 50%;
+    transform: translateY(50%);
+}
+
+#quiz-sm-icon-con {
+	left: 18% !important	;
+}
+
+.result-text {
+	text-align: left;
+	// width: 40%;
+}
+
+.quiz-text-con {
+	width: 50%;
+}
+
+.quiz-sm-icon-con {
+	width: 20%;
+	left: 11%;
+}
 
 .quiz-text-wrapper {
 	float: left;
@@ -184,7 +342,20 @@ input {
 }
 
 .quiz-title {
-	margin-bottom: 50px;
+	margin-bottom: 100px;
+}
+
+.mobile-quiz-result-title {
+	display: none;
+}
+
+.browser-quiz-title {
+	display: block;
+}
+
+.q-con {
+	width: 150px;
+	height: 150px;
 }
 
 }
@@ -194,6 +365,28 @@ input {
 
 .quiz-wrapper {
     height: 425px;
+}
+
+.quiz-confetti {
+	left: 40%;
+}
+
+.quiz-text-con {
+	width: 40%;
+}
+
+#organ-heart {
+	right: -25%;
+    width: 20%;
+}
+
+#organ-lungs {
+    width: 30%;
+    right: -30%;
+}
+
+#organ-liver {
+    width: 30%;
 }
 
 }
@@ -211,5 +404,39 @@ input {
 .quiz-text-wrapper {
 	width: 40%;
 }
+
+#organ-heart {
+	width: 15%;
+	right: -35%;
+}
+
+#organ-lungs {
+	right: -45%;
+}
+
+#organ-liver {
+    width: 25%;
+}
+
+.quiz-text-con {
+	margin-left: 5%;
+}
+
+.quiz-confetti {
+    left: 50%;
+}
+
+// .q-con {
+// 	width: 150px;
+// 	height: 150px;
+// }
+
+.quiz-q-wrapper {
+    width: 40%;
+}
+
+// .quiz-title {
+//     margin-bottom: 100px;
+// }
 
 }

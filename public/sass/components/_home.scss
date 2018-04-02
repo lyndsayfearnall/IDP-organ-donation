@@ -38,6 +38,7 @@
   position: relative;
   margin-left: 25px;
   margin-right: 25px;
+  z-index: 100;
 }
 
 #donor-button{
@@ -48,6 +49,7 @@
   width: 175px;
   height: 35px;
   border-radius: 8px;
+  margin-bottom: 25px;
 }
 
 #donor-button p {

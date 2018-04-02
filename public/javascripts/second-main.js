@@ -37,16 +37,22 @@ function checkAnswers(){
 
 	console.log(Math.max(...answers));
 	var mostSelected = Math.max(...answers);
+	var quizResultHeart = document.querySelector('#heart-result');
+	var quizResultLungs = document.querySelector('#lungs-result');
+	var quizResultLiver = document.querySelector('#liver-result');
+	// var quizResult = document.querySelector('.quiz-result-wrapper');
 
 	if (answers[0] === mostSelected || answers[1] === mostSelected) {
 		console.log('one of the top two is most');
+		quizResultHeart.classList.add('active-result');
 	}
 	else if (answers[2] === mostSelected || answers[3] === mostSelected) {
 		console.log('one of the middle two is most');
+		quizResultLungs.classList.add('active-result');
 	}
 	else if (answers[4] === mostSelected || answers[5] === mostSelected) {
 		console.log('one of the bottom two is most');
-
+		quizResultLiver.classList.add('active-result');
 	}
 }
 
@@ -73,10 +79,12 @@ quizOption.forEach(function(e, i) {
 
 
 // ***** Toggling Quiz ***** //
+// var quizResult = document.querySelectorAll('.quiz-result-wrapper');
 
 function toggleQuiz() {
 	// console.log('quiz toggle being fondled')
 	quiz.classList.toggle('quiz-active');
+	// quizResult.classList.remove('active-result');
 	// closeMenu.classList.toggle('is-active');
 }
 

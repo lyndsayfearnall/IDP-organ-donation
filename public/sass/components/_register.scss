@@ -10,6 +10,7 @@
 	margin-left: 25px;
 	margin-right: 25px;
 	padding-top: 50px;
+	z-index: 1000;
 }
 
 // #register-title {
@@ -18,7 +19,7 @@
 
 .sm-icon {
 	width: 15%;
-	margin-top: 25px;
+	// margin-top: 25px;
 	margin-bottom: 25px;
 	margin-left: 15px;
 	cursor: pointer;
@@ -28,14 +29,14 @@
 	// position: relative;
 	// left: 50%;
 	// transform: translateX(-50%);
-	width: 100%;
+	// width: 100%;
 }
 
 .sm-icon-con {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    width: 50%;
+    width: 40%;
 }
 
 @media screen and (min-width: 535px) {
@@ -54,6 +55,13 @@
 
 }
 
+@media screen and (min-width: 720px) {
+
+  .sm-icon-con {
+    width: 25%;
+  }
+}
+
 @media screen and (min-width: 1024px) {
 
 .register-text-wrapper {
@@ -62,6 +70,10 @@
 
 .sm-icon-con {
 	width: 30%;
+}
+
+#register-title {
+	margin-top: 25px;
 }
 
 }
