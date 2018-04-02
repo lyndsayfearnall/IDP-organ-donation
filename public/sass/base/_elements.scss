@@ -1,0 +1,67 @@
+.hidden {
+  display: none; 
+}
+
+/* Grow */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; 
+  overflow-x: hidden;
+}
+
+h1, h2, p{
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-size: 21px;
+  font-family: multicolore;
+}
+
+p {
+  font-size: 16px;
+  font-family: Lato;
+}
+
+@media screen and (min-width: 1024px) {
+
+h1 {
+  font-size: 32px;
+}
+
+p {
+  font-size: 21px;
+}
+
+}
+
+@media screen and (min-width: 1900px) {
+
+h1 {
+  font-size: 36px;
+}
+
+p {
+  font-size: 21px;
+}
+
+}

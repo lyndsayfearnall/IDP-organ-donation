@@ -1,13 +1,427 @@
 
-  <div class="wrapper" id="anim-container">
+<!-- TOP NAV -->
+<div class="nav-wrapper">
+  <a class="nav-scroll" href=".home-wrapper">
+    <embed id="logo" src="../images/logo.svg"> 
+  </a>
+
+  <button class="hamburger ham-menu-wrapper hamburger--spring" type="button">
+  <span class="ham-menu hamburger-box">
+    <span class="ham-menu hamburger-inner"></span>
+  </span>
+</button>
+
+  <div class="menu-wrapper">
+    <a class="browser-menu-text nav-scroll" href=".home-wrapper"><p class="menu-text">Home</p></a>
+    <a class="browser-menu-text nav-scroll" href=".video-wrapper"><p class="menu-text">Watch Us</p></a>
+    <a class="browser-menu-text nav-scroll" href=".faqs-wrapper"><p class="menu-text">Two Minutes</p></a>
+    <a class="browser-menu-text nav-scroll" href=".register-wrapper"><p class="menu-text">Register</p></a>
+  </div>
+
+  </div>
+
+   <div class="slide-nav-wrapper">
+      <div class="navigation-menu">
+        <ul class="nav-text-con">
+          <li><a class="navText nav-scroll" href=".home-wrapper">Home</a></li>
+          <li><a class="navText nav-scroll" href=".video-wrapper">Watch Us</a></li>
+          <li><a class="navText nav-scroll" href=".faqs-wrapper">Two Minutes</a></li>
+          <li><a class="navText nav-scroll" href=".register-wrapper">Register</a></li>
+        </ul>
+      </div>
+
+</div>
+
+<!-- HOME PAGE -->
+  <div class="home-wrapper" >
+    <embed id="mobile-conffetti" src="../images/mobile-conffetti.svg">
+    <img id="browser-conffetti" src="../images/confetti.png">
+    <embed class="organ-group" src="../images/organ-group.svg">
+
+      <div id="home-text-wrapper">
+        <h1>What can you do in <br> two minutes?</h1>
+        <p>It only takes two minutes to register as an organ donor. If you’ve got an Ontario health card and two minutes you can save up to eight lives. Are you ready to make a difference? Click the link to register now, or keep scrolling to learn more.</p>
+
+        <div id="donor-button">
+          <a href="https://www.beadonor.ca/"><p id="donor-text">REGISTER TO BE A <span id="donor-red-text"> DONOR </span></p></a>
+        </div>
+      </div>
+
+
+    <!-- Seperate organ characters -->
       <!-- <a href="some.html#myThing" stlye="color: white">Link</a> -->
-    <div class="organ-wrapper">
+    <!-- <div class="organ-wrapper">
         
       <img src="images/organs/liver.svg" alt="liver Illustration">
       <img src="images/organs/lungs.svg" alt="Lung Illustration">
       <img src="images/organs/heart.svg" alt="Heart Illustration">
+    </div> -->
+  </div>
+  <!-- HOME PAGE ENDS -->
+
+  <!-- VIDEO PAGE -->
+
+  <div class="video-wrapper">
+    <!-- <div class="video-play-button"> -->
+      <div class="video-play-button video-button rotate">
+  <!--       <svg height="80" width="80" xmlns="http://www.w3.org/2000/svg">
+        <rect class="shape" height="80" width="80" /> -->
+        <img class="play-button" src="../images/play.svg">
+      </div>
+    <!-- </div> -->
+
+    <div class="video-text-wrapper">
+      <h1 id="video-title" class="video-text">Sign up now to save <br> someone later</h1>
+      <p class="video-text">There are more than 1,500 people in Ontario that are currently waiting for organ transplants that will save their lives. Registering as an organ donor is simple, fast, and generous. Curious about how it works? We can walk you through the process.</p>
+    </div>
+
+    <div id="video-overlay"></div>
+      <video autoplay muted loop>
+        <source src="../videos/Organ_donation_video_preview.mp4" type="video/mp4">
+      </video>
+
+      <div class="full-video-wrapper">
+        <img class="video-button" id="video-close" src="../images/close.svg">
+          <video class="full-video" autoplay muted controls>
+            <source src="../videos/Organ_donation_video_preview.mp4" type="video/mp4">
+          </video>
+      </div>
+  </div>
+  <!-- VIDEO PAGE ENDS -->
+
+  <!-- CHARACTER FAQS PAGE -->
+  <div class="faqs-wrapper">
+    <img id="hair-character" src="../images/hair-character.svg">
+    <img id="browser-hair-character" src="../images/browser-hair-character.png">
+
+    <div class="faqs-text-wrapper"> 
+      <h1 class="faqs-title">You can't get a haircut in two minutes</h1>
+      <p>There are more than 1,500 people in Ontario that are currently waiting for organ transplants that will save their lives. Registering as an organ donor is simple, fast, and generous. Curious about how it works? We can walk you through the process.</p>
     </div>
   </div>
+  <!-- CHARACTER FAQS PAGE ENDS -->
+
+  <!-- QUIZ PAGE -->
+  <div class="quiz-wrapper">
+
+    <div class="quiz-text-wrapper">
+      <h1 id="quiz-title" class="quiz-text">WHICH ORGAN MATCHES YOUR PERSONALITY?</h1>
+      <p id="quiz-link" class="quiz-text quiz-toggle">Take this quiz to find out</p>
+    </div>
+
+    <embed class="organ-group" id="organ-group-quiz" src="../images/organ-group.svg">
+
+  </div>
+
+  <div class="quiz-page-wrapper">
+    <img class="quiz-close quiz-toggle" src="../images/blue-close.svg">
+
+    <div class="quiz-q-wrapper active" id="q-one-con">
+       <h1 class="quiz-title">What's your favourite late night snack?</h1>
+
+<!-- FIRST QUIZ PAGE -->
+      <div class="q-con">
+        <input type="radio" name="q1" value="a1">
+        <img class="q-icon" src="../images/quiz-icons/cupcake.svg">
+      </div>
+      
+      <div class="q-con">
+        <input type="radio" name="q1" value="a2">
+        <img class="q-icon" src="../images/quiz-icons/food.svg">
+      </div>
+      
+      <div class="q-con">
+        <input type="radio" name="q1" value="a3">
+        <img class="q-icon" src="../images/quiz-icons/diet.svg">
+      </div>
+      
+      <div class="q-con">
+        <input type="radio" name="q1" value="a4">
+        <img class="q-icon" src="../images/quiz-icons/pizza.svg">
+      </div>
+      
+      <div class="q-con">
+        <input type="radio" name="q1" value="a5">
+        <img class="q-icon" src="../images/quiz-icons/sandwich.svg">
+      </div>
+      
+      <div class="q-con">
+        <input type="radio" name="q1" value="a6">
+        <img class="q-icon" src="../images/quiz-icons/sushi.svg">
+      </div>
+
+      <!-- <button class="quiz-button"><h1>Next</h1></button> -->
+    </div>
+
+<!-- SECOND QUIZ PAGE -->
+    <div class="quiz-q-wrapper" id="q-two-con">
+     <h1 class="quiz-title">How do you spend your friday nights?</h1>
+
+    <div class="q-con">
+      <input type="radio" name="q2" value="a1">
+      <h1 class="quiz-a-text">Netflix and pizza</h1>
+    </div>
+
+    <div class="q-con">
+      <input type="radio" name="q2" value="a2">
+      <h1 class="quiz-a-text"> Drinks at a friends</h1>
+    </div>
+
+    <div class="q-con">
+      <input type="radio" name="q2" value="a3">
+      <h1 class="quiz-a-text">Playing video games</h1>
+    </div>
+
+    <div class="q-con">
+      <input type="radio" name="q2" value="a4">
+      <h1 class="quiz-a-text">reading a book</h1>
+    </div>
+
+    <div class="q-con">
+      <input type="radio" name="q2" value="a5">
+      <h1 class="quiz-a-text">bed by 9pm</h1>
+    </div>
+
+    <div class="q-con">
+      <input type="radio" name="q2" value="a6">
+      <h1 class="quiz-a-text">homework</h1>
+    </div>
+
+    <!-- <button class="quiz-button"><h1>Next</h1></button> -->
+    </div>
+
+<!-- THIRD QUIZ PAGE -->
+
+    <div class="quiz-q-wrapper" id="q-three-con">
+       <h1 class="quiz-title">What is your favourite animal?</h1>
+
+      <div class="q-con">
+        <input type="radio" name="q3" value="a1">
+        <img class="q-icon" src="../images/quiz-icons/owl.svg">
+      </div>
+      
+      <div class="q-con">
+        <input type="radio" name="q3" value="a2">
+        <img class="q-icon" src="../images/quiz-icons/cat.svg">
+      </div>
+      
+      <div class="q-con">
+        <input type="radio" name="q3" value="a3">
+        <img class="q-icon" src="../images/quiz-icons/dog.svg">
+      </div>
+      
+      <div class="q-con">
+        <input type="radio" name="q3" value="a4">
+        <img class="q-icon" src="../images/quiz-icons/unicorn.svg">
+      </div>
+      
+      <div class="q-con">
+        <input type="radio" name="q3" value="a5">
+        <img class="q-icon" src="../images/quiz-icons/rabbit.svg">
+      </div>
+      
+      <div class="q-con">
+        <input type="radio" name="q3" value="a6">
+        <img class="q-icon" src="../images/quiz-icons/monkey.svg">
+      </div>
+
+      <!-- <button class="quiz-button"><h1>Next</h1></button> -->
+    </div>
+
+<!-- FOURTH QUIZ PAGE -->
+
+    <div class="quiz-q-wrapper" id="q-four-con">
+       <h1 class="quiz-title">Choose a fun hobby</h1>
+
+      <div class="q-con">
+        <input type="radio" name="q4" value="a1">
+        <img class="q-icon" src="../images/quiz-icons/gameboy.svg">
+      </div>
+      
+      <div class="q-con">
+        <input type="radio" name="q4" value="a2">
+        <img class="q-icon" src="../images/quiz-icons/kite.svg">
+      </div>
+      
+      <div class="q-con">
+        <input type="radio" name="q4" value="a3">
+        <img class="q-icon" src="../images/quiz-icons/moon.svg">
+      </div>
+      
+      <div class="q-con">
+        <input type="radio" name="q4" value="a4">
+        <img class="q-icon" src="../images/quiz-icons/guitar.svg">
+      </div>
+      
+      <div class="q-con">
+        <input type="radio" name="q4" value="a5">
+        <img class="q-icon" src="../images/quiz-icons/sewing.svg">
+      </div>
+      
+      <div class="q-con">
+        <input type="radio" name="q4" value="a6">
+        <img class="q-icon" src="../images/quiz-icons/bowling.svg">
+      </div>
+
+      <!-- <button class="quiz-button"><h1>Next</h1></button> -->
+    </div>
+
+<!-- FIFTH QUIZ PAGE -->
+
+    <div class="quiz-q-wrapper" id="q-five-con">
+       <h1 class="quiz-title">What's your favourite ice cream flavour?</h1>
+
+      <div class="q-con">
+        <input type="radio" name="q5" value="a1">
+         <h1 class="quiz-a-text">vanilla</h1>
+      </div>
+      
+      <div class="q-con">
+        <input type="radio" name="q5" value="a2">
+         <h1 class="quiz-a-text">mint chocolate chip</h1>
+      </div>
+      
+      <div class="q-con">
+        <input type="radio" name="q5" value="a3">
+         <h1 class="quiz-a-text">strawberry</h1>
+      </div>
+      
+      <div class="q-con">
+        <input type="radio" name="q5" value="a4">
+         <h1 class="quiz-a-text">mango</h1>
+      </div>
+      
+      <div class="q-con">
+        <input type="radio" name="q5" value="a5">
+         <h1 class="quiz-a-text">cookies n' cream</h1>
+      </div>
+      
+      <div class="q-con">
+        <input type="radio" name="q5" value="a6">
+         <h1 class="quiz-a-text">chocolate</h1>
+      </div>
+
+      <!-- <button class="quiz-button"><h1>Next</h1></button> -->
+    </div>
+    
+  <!-- </div> -->
+
+    <div id="heart-result" class="quiz-result-wrapper">
+      <img class="quiz-close quiz-toggle" src="../images/blue-close.svg">
+      <div class="result-con">
+
+        <img class="quiz-confetti" src="../images/quiz-confetti.svg">
+        <div class="middle-con">
+
+         <h1 id="quiz-result-title" class="mobile-quiz-result-title result-text">You got the heart!</h1>
+        <embed class="organ-result" id="organ-heart" src="../images/organs/heart.svg">
+
+          <div class="quiz-text-con">
+          <h1 id="quiz-result-title" class="result-text browser-quiz-title">You got the heart!</h1>
+          <!-- <embed class="organ-result" id="organ-heart" src="../images/organs/heart.svg"> -->
+            <p class="result-text">You’re a kind soul and love to love. you support your friends and family by always providing them with what they need and constantly pumping positivity into their lives.</p>
+            <p class="result-text">Now why not spend your two minutes registering to be an organ donor?</p>
+            <embed class="mobile-quiz-confetti" src="../images/mobile-quiz-confetti.svg">
+            <!-- <img class="quiz-confetti" src="../images/quiz-confetti.svg"> -->
+            <p id="result-share" class="result-text">Share your result!</p>
+            <div class="sm-icon-wrapper">
+              <div class="sm-icon-con" id="quiz-sm-icon-con">
+                <img class="sm-icon" src="../images/blue-twitter.svg">
+                <img class="sm-icon" src="../images/blue-facebook.svg">
+                <img class="sm-icon" src="../images/blue-instagram.svg">  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+      <div id="lungs-result" class="quiz-result-wrapper">
+        <img class="quiz-close quiz-toggle" src="../images/blue-close.svg">
+        <div class="result-con">
+          <!-- <h1 id="quiz-result-title" class="result-text">You got the Lungs!</h1> -->
+          <img class="quiz-confetti" src="../images/quiz-confetti.svg">
+          <div class="middle-con">
+
+            <h1 id="quiz-result-title" class="mobile-quiz-result-title result-text">You got the Lungs!</h1>
+          <embed class="organ-result" id="organ-lungs" src="../images/organs/lungs.svg">
+
+          <div class="quiz-text-con">
+            <h1 id="quiz-result-title" class="result-text browser-quiz-title">You got the Lungs!</h1>
+            <p class="result-text">You’re a real go getter! And love to go on adventures in the wild.  Is there anything more refereshing then breathing in the fresh air from the mountain tops?</p>
+            <p class="result-text">Now why not spend your two minutes registering to be an organ donor?</p>
+            <embed class="mobile-quiz-confetti" src="../images/mobile-quiz-confetti.svg">
+            <!-- <img class="quiz-confetti" src="../images/quiz-confetti.svg"> -->
+            <p id="result-share" class="result-text">Share your result!</p>
+            <div class="sm-icon-wrapper">
+              <div class="sm-icon-con" id="quiz-sm-icon-con">
+                <img class="sm-icon" src="../images/blue-twitter.svg">
+                <img class="sm-icon" src="../images/blue-facebook.svg">
+                <img class="sm-icon" src="../images/blue-instagram.svg">  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div id="liver-result" class="quiz-result-wrapper">
+        <img class="quiz-close quiz-toggle" src="../images/blue-close.svg">
+        <div class="result-con">
+          <!-- <h1 id="quiz-result-title" class="result-text">You got the Liver!</h1> -->
+          <!-- <embed class="organ-result" id="organ-liver" src="../images/organs/liver.svg"> -->
+          <img class="quiz-confetti" src="../images/quiz-confetti.svg">
+
+          <div class="middle-con"> 
+
+          <h1 id="quiz-result-title" class="mobile-quiz-result-title result-text">You got the liver!</h1>
+          <embed class="organ-result" id="organ-liver" src="../images/organs/liver.svg">
+
+            <div class="quiz-text-con">
+              <h1 id="quiz-result-title" class="result-text browser-quiz-title">You got the Liver!</h1>
+              <p class="result-text">You love filtering through the facts of life, and almost always have your nose in a book. When you aren’t studying hard you can be caught out on the town drinking your favourite drinks.</p>
+              <p class="result-text">Now why not spend your two minutes registering to be an organ donor?</p>
+            <embed class="mobile-quiz-confetti" src="../images/mobile-quiz-confetti.svg">
+            <p id="result-share" class="result-text">Share your result!</p>
+            <div class="sm-icon-wrapper">
+              <div class="sm-icon-con" id="quiz-sm-icon-con">
+                <img class="sm-icon" src="../images/blue-twitter.svg">
+                <img class="sm-icon" src="../images/blue-facebook.svg">
+                <img class="sm-icon" src="../images/blue-instagram.svg">  
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    </div>
+
+  </div>
+  <!-- QUIZ PAGE ENDS -->
+
+  <!-- REGISTER PAGE -->
+  <div class="register-wrapper">
+
+    <div class="register-text-wrapper">
+      <h1 id="register-title">Register Today</h1>
+      <p id="register-text">It’s one of the most meaningful things you can do in the same amount of time it takes to scroll through your Instagram feed. All it takes is two minutes.</p>
+
+      <div id="donor-button">
+          <a href="https://www.beadonor.ca/"><p id="donor-text">REGISTER TO BE A <span id="donor-red-text"> DONOR </span></p></a>
+      </div>
+      <div class="sm-icon-wrapper">
+        <div class="sm-icon-con">
+          <img class="sm-icon" src="../images/twitter.svg">
+          <img class="sm-icon" src="../images/facebook.svg">
+          <img class="sm-icon" src="../images/instagram.svg">
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <!-- REGISTER PAGE ENDS -->
+
+  <!-- Don't really know what this is, I think it's related to the confetti animation -->
   <div class="hidden">
     <svg id="squiggle" xmlns="http://www.w3.org/2000/svg" width="26.1" height="23">
       <path fill="#fb3e34" d="M0 23h6.1v-7.7h9.2V4.6h10.8V0H10.7v9.2H0z"/>
