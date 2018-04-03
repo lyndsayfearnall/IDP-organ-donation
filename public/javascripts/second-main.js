@@ -140,28 +140,74 @@ var hobbyScroll = document.querySelector("#hobby");
 var marathonScroll = document.querySelector("#marathon");
 var partyScroll = document.querySelector("#party");
 
-  function add_class_on_scroll() {
-  	// console.log("hey");
+	var hairStart = document.querySelector("#faq-1");
+    var hobbyStart = document.querySelector("#faq-2");
+    var marathonStart = document.querySelector("#faq-3");
+    var partyStart = document.querySelector("#faq-4");	
+
+// function resizeSectionScroll() {
+//     hairStart = document.querySelector("#faq-1");
+//     hobbyStart = document.querySelector("#faq-2");
+// }
+
+// window.addEventListener('resize', resizeSectionScroll, false);
+
+console.log(hobbyStart.offsetTop);
+
+  function hairScrolling() {
       hairScroll.classList.add("animated", "slideInUp");
       hairScroll.style.opacity = "1";
+  }
 
-      hobbyScroll.classList.add("animated", "slideInUp");
+  window.addEventListener('scroll', function(){ 
+      scrollpos = window.scrollY;
+      if(scrollpos > 1200){
+          hairScrolling();
+      }
+  });
+
+    function hobbyScrolling() {
+  	// console.log("hey");
+      hobbyScroll.classList.add("animated", "slideInLeft");
       hobbyScroll.style.opacity = "1";
+  }
 
+  window.addEventListener('scroll', function(){ 
+      scrollpos = window.scrollY;
+      if(scrollpos > 1900){
+          hobbyScrolling();
+      }
+
+  });
+
+  function marathonScrolling() {
+  	// console.log("hey");
       marathonScroll.classList.add("animated", "slideInUp");
       marathonScroll.style.opacity = "1";
+  }
 
+  window.addEventListener('scroll', function(){ 
+      scrollpos = window.scrollY;
+      if(scrollpos > 2500){
+          marathonScrolling();
+      }
+
+  });
+
+ function partyScrolling() {
+  	// console.log("hey");
       partyScroll.classList.add("animated", "slideInUp");
       partyScroll.style.opacity = "1";
   }
 
   window.addEventListener('scroll', function(){ 
       scrollpos = window.scrollY;
-      if(scrollpos > 1111){
-          add_class_on_scroll();
+      if(scrollpos > 3200){
+          partyScrolling();
       }
 
   });
+
 
 // ***** Scroll Faqs Animation ***** //
 inView.offset(200);

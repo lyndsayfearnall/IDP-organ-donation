@@ -499,7 +499,8 @@ video {
   transform: translateX(-50%); }
 
 #mobile-party {
-  height: 65%; }
+  height: 65%;
+  padding-bottom: 25px; }
 
 .faqs-character {
   display: none; }
@@ -520,7 +521,10 @@ video {
 
   .faqs-text-wrapper {
     width: 45%;
-    bottom: unset; } }
+    bottom: unset; }
+
+  .mobile-faqs-character {
+    display: none; } }
 @media screen and (min-width: 575px) {
   .faqs-text-wrapper {
     top: 50%;
@@ -586,9 +590,6 @@ video {
 
   #party {
     margin-left: 50px; } }
-@media screen and (min-width: 1024px) {
-  .mobile-faqs-character {
-    display: none; } }
 @media screen and (min-width: 1280px) {
   .faqs-text-wrapper {
     width: 35%;

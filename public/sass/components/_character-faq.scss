@@ -69,6 +69,7 @@
 
 #mobile-party {
 	height: 65%;
+	padding-bottom: 25px;
 }
 
 .faqs-character {
@@ -102,6 +103,10 @@
 .faqs-text-wrapper {
 	width: 45%;
 	bottom: unset;
+}
+
+.mobile-faqs-character {
+	display: none;
 }
 
 }
@@ -204,9 +209,6 @@
 
 @media screen and (min-width: 1024px) {
 
-.mobile-faqs-character {
-	display: none;
-}
 
 // #faq-1 {
 // 	// background: #ff5148;
