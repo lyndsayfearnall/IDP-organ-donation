@@ -74,7 +74,7 @@
 
 	  var total = 60;
 	  var container = document.querySelector("#anim-container");
-	  var width = container.innerWidth;
+	  var width = container.width;
 	  var height = window.innerHeight;
 
 	  for (var i = 0; i < total; i++) {

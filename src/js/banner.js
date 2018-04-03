@@ -8,7 +8,7 @@ export default () => {
   
   const total = 60;
   const container = document.querySelector("#anim-container")
-  const width = container.innerWidth
+  const width = container.width
   const height = window.innerHeight
    
   for (let i=0; i<total; i++){ 

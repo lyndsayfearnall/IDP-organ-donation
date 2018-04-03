@@ -7,13 +7,6 @@ function auth(req, res, next) {
   req.session.first_name && req.session.last_name ?
     next() : res.redirect("/dashboard/login")
 }
-function verifyPassword() {
-
-}
-
-function hashPassword() {
-
-}
 
 function addSectionTitle(section) {
   switch(section.sectionNumber) {
@@ -50,10 +43,6 @@ router.get('/', function(req, res, next) {
 
 router.get('/dashboard/login', (req, res) => {
   res.render('dashboard/login', {dashboard: true})
-})
-
-router.get('/dashboard/user', (req, res) => {
-  // render user create form
 })
 
 router.get('/dashboard/welcome', auth, (req, res) => {
