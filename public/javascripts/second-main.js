@@ -140,19 +140,26 @@ var hobbyScroll = document.querySelector("#hobby");
 var marathonScroll = document.querySelector("#marathon");
 var partyScroll = document.querySelector("#party");
 
-	var hairStart = document.querySelector("#faq-1");
-    var hobbyStart = document.querySelector("#faq-2");
-    var marathonStart = document.querySelector("#faq-3");
-    var partyStart = document.querySelector("#faq-4");	
+var hairStart;
+var hobbyStart;
+var marathonStart;
+var partyStart;
 
-// function resizeSectionScroll() {
-//     hairStart = document.querySelector("#faq-1");
-//     hobbyStart = document.querySelector("#faq-2");
-// }
+function resizeSectionScroll() {
+	console.log('ehhh');
+    hairStart = document.querySelector("#faq-1").getBoundingClientRect().top + document.documentElement.scrollTop;
+    hobbyStart = document.querySelector("#faq-2").getBoundingClientRect().top + document.documentElement.scrollTop;
+    marathonStart = document.querySelector("#faq-3").getBoundingClientRect().top + document.documentElement.scrollTop;
+	partyStart = document.querySelector("#faq-4").getBoundingClientRect().top + document.documentElement.scrollTop;
+	// element.getBoundingClientRect().top + document.documentElement.scrollTop
+	console.log(hairStart);	
+}
 
-// window.addEventListener('resize', resizeSectionScroll, false);
+window.addEventListener('load', resizeSectionScroll, false);
 
-console.log(hobbyStart.offsetTop);
+window.addEventListener('resize', resizeSectionScroll, false);
+
+// console.log(hairStart.offsetTop);
 
   function hairScrolling() {
       hairScroll.classList.add("animated", "slideInUp");
@@ -161,7 +168,7 @@ console.log(hobbyStart.offsetTop);
 
   window.addEventListener('scroll', function(){ 
       scrollpos = window.scrollY;
-      if(scrollpos > 1200){
+      if(scrollpos > hairStart){
           hairScrolling();
       }
   });
@@ -174,7 +181,7 @@ console.log(hobbyStart.offsetTop);
 
   window.addEventListener('scroll', function(){ 
       scrollpos = window.scrollY;
-      if(scrollpos > 1900){
+      if(scrollpos > hobbyStart){
           hobbyScrolling();
       }
 
@@ -188,7 +195,7 @@ console.log(hobbyStart.offsetTop);
 
   window.addEventListener('scroll', function(){ 
       scrollpos = window.scrollY;
-      if(scrollpos > 2500){
+      if(scrollpos > marathonStart){
           marathonScrolling();
       }
 
@@ -196,13 +203,13 @@ console.log(hobbyStart.offsetTop);
 
  function partyScrolling() {
   	// console.log("hey");
-      partyScroll.classList.add("animated", "slideInUp");
+      partyScroll.classList.add("animated", "slideInLeft");
       partyScroll.style.opacity = "1";
   }
 
   window.addEventListener('scroll', function(){ 
       scrollpos = window.scrollY;
-      if(scrollpos > 3200){
+      if(scrollpos > partyStart){
           partyScrolling();
       }
 
