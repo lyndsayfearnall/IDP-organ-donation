@@ -1,0 +1,41 @@
+<div class="content-wrapper">
+    <h1>Edit {{ section.sectionTitle }}</h1>
+    <form>
+        <div class="form-group">
+            <input type="text" class="form-control" id="heading" aria-describedby="emailHelp" value="{{ section.heading }}">
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" aria-label="With textarea" name="body" id="body" value="{{ section.body }}">
+                {{ section.body}}
+            </textarea>
+        </div>
+    </form>
+    <button id="submit" class="btn btn-org-red">Submit</button>
+</div>
+
+<script>
+    (() => {
+        console.log("sdfsdf")
+        document.querySelector("#submit")
+            .addEventListener("click", async (e) => {
+                e.preventDefault()
+                try {
+                    console.log("sdfsd")
+                    await fetch("/api/section/{{section.id}}", {
+                        method: "PUT",
+                        credentials: "same-origin", // THIS IS SO IMPORTANT 
+                        headers: {
+                            "Content-Type" : "application/json"
+                        },
+                        body: JSON.stringify({
+                            heading: document.querySelector("#heading").value,
+                            body: document.querySelector("#body").value })
+                    })
+                    {{!-- window.location.href = "/dashboard/edit" --}}
+                } catch(err) {
+                    console.log(err)
+                }
+            })
+    })()
+
+</script>

@@ -3,10 +3,12 @@ var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
+const session = require("express-session")
 var bodyParser = require('body-parser');
 var xhb = require('express-handlebars');
 var index = require('./routes/index');
 var users = require('./routes/users');
+const config = require("./config")
 
 var app = express();
 
@@ -22,6 +24,12 @@ app.set('view engine', 'handlebars');
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(session({ 
+  secret: config.secret,
+   cookie: { secure: false },
+   resave: false,
+   saveUninitialized: true,
+}))
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 

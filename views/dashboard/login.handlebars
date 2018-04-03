@@ -1,0 +1,40 @@
+<section class="content-wrapper">
+    <img src="/images/logo.svg" alt="2 minutes">
+    <form>
+    <div class="form-group">
+        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+        <input type="password" class="form-control" id="password" placeholder="Password">
+    </div>
+    </form>
+    <button class="btn btn-org-red">Login me in!</button>
+</section>0
+
+
+<script>
+(() => {
+    const form = document.querySelector("form")
+
+
+    document.querySelector("button")
+        .addEventListener("click", async (e) => {
+            e.preventDefault()
+            try {
+                await fetch("/api/login", {
+                    method: "POST",
+                    credentials: "same-origin", // THIS IS SO IMPORTANT 
+                    headers: {
+                        "Content-Type" : "application/json"
+                    },
+                    body: JSON.stringify({
+                        email: form.querySelector("#email").value,
+                        password: form.querySelector("#password").value })
+                })
+                window.location.href = "/dashboard/welcome"
+            } catch(err) {
+                console.log(err)
+            }
+        })
+})()
+</script>
