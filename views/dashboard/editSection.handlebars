@@ -10,13 +10,13 @@
             </textarea>
         </div>
     </form>
-    <button id="submit" class="btn btn-org-red">Submit</button>
+    <button id="send" class="btn btn-org-red">Submit</button>
 </div>
 
 <script>
     (() => {
         console.log("sdfsdf")
-        document.querySelector("#submit")
+        document.querySelector("#send")
             .addEventListener("click", async (e) => {
                 e.preventDefault()
                 try {
@@ -31,7 +31,7 @@
                             heading: document.querySelector("#heading").value,
                             body: document.querySelector("#body").value })
                     })
-                    {{!-- window.location.href = "/dashboard/edit" --}}
+                    window.location.href = "/dashboard/edit"
                 } catch(err) {
                     console.log(err)
                 }

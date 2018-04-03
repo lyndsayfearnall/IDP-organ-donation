@@ -160,20 +160,19 @@ router.post('/api/login', (req, res) => {
 })
 // TODO: Remove this for production :)
 router.put('/api/section/:id', (req,res) => {
-  /** Update section */
-  const { heading, body } = req.body
-  console.log(`UPDATE section SET heading="${trim(heading)}", body="${trim(body)} WHERE id=${req.params.id}`)
-  db.query(`UPDATE section SET heading="${trim(heading)}", body="${trim(body)} WHERE id=${req.params.id}`, (err, result) => {
+  const heading = req.body.heading.trim(), body = req.body.body.trim()
+  const id = req.params.id
+  db.query(`
+      UPDATE sections
+      SET heading="${heading}",
+          body="${body}"
+      WHERE id=${id};
+    `, (err, result) => {
     console.log(result)
-    try {
-      if(err) console.log(err)
-      res.status(200).json({
-        mesage: "all good"
-      })
-    } catch(err) {
-      // res.status(500).json(err)
-      console.log(err)
-    }
+    if(err) console.log(err)
+    res.status(200).json({
+      mesage: "all good"
+    })
   })
 })
 
