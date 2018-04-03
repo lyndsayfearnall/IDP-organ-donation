@@ -62,3 +62,4 @@ VALUES (6, "Lorem ipsum dolor sit amet.", "Lorem ipsum dolor sit amet, consectet
 INSERT INTO sections 
     (sectionNumber, heading, body, updatedBy)
 VALUES (7, "Lorem ipsum dolor sit amet.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam elementum sem et condimentum feugiat. Sed venenatis faucibus enim id lacinia. Sed dignissim fermentum ex, ac varius metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean diam diam, consectetur in consequat sed, auctor in ligula. Cras lobortis eu tellus a viverra. Fusce eu blandit orci. Nam nec dignissim leo. Vestibulum eros neque, vehicula in nunc at, commodo tincidunt nisl.", "Nicholas Lediet");
+

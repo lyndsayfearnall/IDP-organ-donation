@@ -6,6 +6,7 @@
     "start": "gulp"
   },
   "dependencies": {
+    "animate.css": "^3.6.1",
     "babel-loader": "6.2.4",
     "bcrypt": "^1.0.3",
     "body-parser": "~1.18.2",
@@ -16,6 +17,7 @@
     "express-session": "^1.15.6",
     "hamburgers": "^0.9.3",
     "hover.css": "^2.3.0",
+    "in-view": "^0.6.1",
     "morgan": "~1.9.0",
     "mysql": "^2.15.0",
     "serve-favicon": "~2.4.5"

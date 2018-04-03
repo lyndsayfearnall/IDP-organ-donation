@@ -10,7 +10,7 @@
 	margin-left: 25px;
 	margin-right: 25px;
 	padding-top: 50px;
-	z-index: 1000;
+	z-index: 600;
 }
 
 // #register-title {
@@ -37,7 +37,16 @@
     left: 50%;
     transform: translateX(-50%);
     width: 40%;
+    // z-index: 600;
 }
+// .register-confetti {
+// 	display: none;
+// }
+
+// .mobile-register-confetti {
+// 	position: absolute;
+// 	bottom: 0;
+// }
 
 @media screen and (min-width: 535px) {
 
@@ -60,6 +69,14 @@
   .sm-icon-con {
     width: 25%;
   }
+
+// .mobile-register-confetti {
+// 	display: none;
+// }
+
+// .register-confetti{
+// 	display: block;	
+// }
 }
 
 @media screen and (min-width: 1024px) {

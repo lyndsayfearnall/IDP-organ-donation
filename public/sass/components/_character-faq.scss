@@ -24,6 +24,63 @@
 	display: none;
 }
 
+.faqs-wrapper {
+	// opacity: 0;
+	// height: 100vh;
+	transition: background 1s ease;
+}
+
+#faq-1 {
+	// background: #ff5148;
+	height: 100vh;
+}
+
+#faq-2 {
+	// background: #45e3ef;
+	height: 100vh;
+}
+
+#faq-3 {
+	// background: #1d3cce;
+	height: 100vh;
+}
+
+#faq-4 {
+	// background: #ff92db;
+	height: 100vh;
+}
+
+.faqs-content-con {
+	position: relative;
+}
+
+.mobile-faqs-character{
+	width: 100%;
+	position: absolute;
+	height: auto;
+	margin-top: 25px;
+}
+
+#mobile-hair {
+	left: 50%;
+	transform: translateX(-50%);
+	// width: 80%;
+}
+
+#mobile-party {
+	height: 65%;
+	padding-bottom: 25px;
+}
+
+.faqs-character {
+	display: none;
+}
+
+.faqs-animate {
+	opacity: 0;
+}
+
+
 @media screen and (min-width: 375px) {
 
 #hair-character {
@@ -48,6 +105,10 @@
 	bottom: unset;
 }
 
+.mobile-faqs-character {
+	display: none;
+}
+
 }
 
 @media screen and (min-width: 575px) {
@@ -55,13 +116,119 @@
 	top: 50%;
 	transform: translateY(-50%);
 	margin-left: 50px;
+	position: relative;
 	& .faqs-title {
 	font-size: 32px;
 	text-align: left;
 	} & p {
 		text-align: left;
 	}	
+
+.right-text {
+	text-align: right !important;
 }
+
+.right-text-con {
+	float: right;
+}
+}
+
+.faqs-wrapper {
+	// opacity: 0;
+	// height: 100vh;
+	transition: background 1s ease;
+}
+
+#faq-1 {
+	// background: #ff5148;
+	height: 100vh;
+}
+
+#faq-2 {
+	// background: #45e3ef;
+	height: 100vh;
+}
+
+#faq-3 {
+	// background: #1d3cce;
+	height: 100vh;
+}
+
+#faq-4 {
+	// background: #ff92db;
+	height: 100vh;
+}
+
+.right-text {
+	text-align: right !important;
+}
+
+.right-text-con {
+	float: right;
+}
+
+.faqs-character {
+    display: block;
+    width: 45%;
+    position: relative;
+    top: 20%;
+    transform: translateY(-20%);
+    // opacity: 0;
+}
+
+#hair {
+	float: right;
+	opacity: 0;
+}
+
+#marathon {
+	float: right;
+	opacity: 0;
+}
+
+#hobby {
+	opacity: 0;
+}
+
+#party {
+	opacity: 0;
+}
+
+.right-text-con {
+    float: right;
+    position: absolute;
+    right: 0;
+}
+
+#party {
+	margin-left: 50px;
+}
+
+
+}
+
+@media screen and (min-width: 1024px) {
+
+
+// #faq-1 {
+// 	// background: #ff5148;
+// 	height: 80vh;
+// }
+
+// #faq-2 {
+// 	// background: #45e3ef;
+// 	height: 80vh;
+// }
+
+// #faq-3 {
+// 	// background: #1d3cce;
+// 	height: 80vh;
+// }
+
+// #faq-4 {
+// 	// background: #ff92db;
+// 	height: 80vh;
+// }
 
 }
 
