@@ -42,7 +42,10 @@ function addSectionTitle(section) {
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('home', { title: 'Two Minutes', msg: "Express" });
+  db.query("SELECT * FROM sections", (err, result) => {
+    res.render('home', { sections: result });
+
+  })
 });
 
 router.get('/dashboard/login', (req, res) => {

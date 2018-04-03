@@ -1,4 +1,16 @@
+  <div class="hidden">
+    <svg id="squiggle" xmlns="http://www.w3.org/2000/svg" width="26.1" height="23">
+      <path fill="#fb3e34" d="M0 23h6.1v-7.7h9.2V4.6h10.8V0H10.7v9.2H0z"/>
+    </svg>
+    <svg id="half-circle" xmlns="http://www.w3.org/2000/svg" width="11.9" height="23">
+      <path d="M11.9 11.5C11.9 17.9 6.7 23 .4 23c-.5 0-.5-23 0-23 6.3 0 11.5 5.1 11.5 11.5z" fill="#fb3e34"/>
+    </svg>
+    <svg id="circle" xmlns="http://www.w3.org/2000/svg" width="23" height="23">
+      <circle cx="11.5" cy="11.5" r="11.5" fill="#fb3e34"/>
+    </svg>
+  </div>
 
+  
 <!-- TOP NAV -->
 <div class="nav-wrapper">
   <a class="nav-scroll" href=".home-wrapper">
@@ -35,14 +47,16 @@
 </div>
 
 <!-- HOME PAGE -->
-  <div class="home-wrapper" >
+  <div class="home-wrapper">
+    <div id="anim-container"></div>
     <embed id="mobile-conffetti" src="../images/mobile-conffetti.svg">
     <img id="browser-conffetti" src="../images/confetti.png">
     <embed class="organ-group" src="../images/organ-group.svg">
 
       <div id="home-text-wrapper">
-        <h1>What can you do in <br> two minutes?</h1>
-        <p>It only takes two minutes to register as an organ donor. If you’ve got an Ontario health card and two minutes you can save up to eight lives. Are you ready to make a difference? Click the link to register now, or keep scrolling to learn more.</p>
+        {{!-- <h1>What can you do in <br> two minutes?</h1> --}}
+        <h1>{{ sections.0.heading }}</h1>
+        <p>{{ sections.0.body }}</p>
 
         <div id="donor-button">
           <a href="https://www.beadonor.ca/"><p id="donor-text">REGISTER TO BE A <span id="donor-red-text"> DONOR </span></p></a>
@@ -73,8 +87,9 @@
     <!-- </div> -->
 
     <div class="video-text-wrapper">
-      <h1 id="video-title" class="video-text">Sign up now to save <br> someone later</h1>
-      <p class="video-text">There are more than 1,500 people in Ontario that are currently waiting for organ transplants that will save their lives. Registering as an organ donor is simple, fast, and generous. Curious about how it works? We can walk you through the process.</p>
+      {{!-- <h1 id="video-title" class="video-text">Sign up now to save <br> someone later</h1> --}}
+      <h1 id="video-title" class="video-text">{{ sections.1.heading }}</h1>
+      <p class="video-text">{{ sections.1.body }}</p>
     </div>
 
     <div id="video-overlay"></div>
@@ -99,8 +114,8 @@
       <embed id="mobile-hair" class="mobile-faqs-character animate zoomInUp" src="../images/characters/mobile-hair.svg">
       <embed id="hair" class="faqs-character" src="../images/characters/hair.svg">
       <div class="faqs-text-wrapper"> 
-        <h1 class="faqs-title">You can't get a haircut in two minutes</h1>
-        <p>There are more than 1,500 people in Ontario that are currently waiting for organ transplants that will save their lives. Registering as an organ donor is simple, fast, and generous. Curious about how it works? We can walk you through the process.</p>
+        <h1 class="faqs-title">{{ sections.2.heading }}</h1>
+        <p>{{ sections.2.body }}</p>
       </div>
     </div>
 
@@ -108,8 +123,8 @@
       <embed id="mobile-hobby" class="mobile-faqs-character animate zoomInUp" src="../images/characters/mobile-hobby.svg">
       <embed id="hobby" class="faqs-character" src="../images/characters/hobby.svg">
       <div class="faqs-text-wrapper right-text-con"> 
-        <h1 class="faqs-title right-text">You can't pick up a new hobby in two minutes</h1>
-        <p class="right-text">But two minutes of your life could save someone else’s.  In Ontario, organ and tissue donation is coordinated and managed by Trillium Gift of Life Network. Did you know, you are five times more likely to need an organ transplant than to have the opportunity to donate.</p>
+        <h1 class="faqs-title right-text">{{ sections.3.heading }}</h1>
+        <p class="right-text">{{ sections.3.body }}</p>
       </div>
     </div>
 
@@ -117,8 +132,8 @@
       <embed id="mobile-marathon" class="mobile-faqs-character animate zoomInUp" src="../images/characters/mobile-marathon.svg">
       <embed id="marathon" class="faqs-character" src="../images/characters/marathon.svg">
       <div class="faqs-text-wrapper"> 
-        <h1 class="faqs-title">You can't run a marathon in two minutes</h1>
-        <p>But two minutes of your life could save someone else’s.  Today, in Ontario, there are over 1,500 people waiting for a lifesaving organ transplant. Every 3 days someone will die because they did not get their transplant in time. But you can help. When you register your consent for organ and tissue donation, you let those waiting know that you would help them if you could.</p>
+        <h1 class="faqs-title">{{ sections.4.heading }}</h1>
+        <p>{{ sections.4.body }}</p>
       </div>
     </div>
 
@@ -126,8 +141,8 @@
       <embed id="mobile-party" class="mobile-faqs-character animate zoomInUp" src="../images/characters/mobile-party.svg">
       <embed id="party" class="faqs-character" src="../images/characters/party.svg">
       <div class="faqs-text-wrapper right-text-con"> 
-        <h1 class="faqs-title right-text">You can't get ready for a party in two minutes</h1>
-        <p class="right-text">But two minutes of your life could save someone else’s.  Your decision to register is confidential. It is stored in a Ministry of Health and Long-Term Care database and it will only be disclosed to Trillium Gift of Life Network at the appropriate time, once it has been determined that lifesaving efforts have failed.</p>
+        <h1 class="faqs-title right-text">{{ sections.5.heading }}</h1>
+        <p class="right-text">{{ sections.5.body }}</p>
       </div>
     </div>
   </div>
@@ -435,8 +450,8 @@
   <div class="register-wrapper">
 
     <div class="register-text-wrapper">
-      <h1 id="register-title">Register Today</h1>
-      <p id="register-text">It’s one of the most meaningful things you can do in the same amount of time it takes to scroll through your Instagram feed. All it takes is two minutes.</p>
+      <h1 id="register-title">{{ sections.6.heading }}</h1>
+      <p id="register-text">{{ sections.6.body }}</p>
 
       <div id="donor-button">
           <a href="https://www.beadonor.ca/"><p id="donor-text">REGISTER TO BE A <span id="donor-red-text"> DONOR </span></p></a>

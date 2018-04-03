@@ -9,3 +9,14 @@
 
 
 
+
+#anim-container {
+    width: 80%;
+    border: 1px solid red;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
