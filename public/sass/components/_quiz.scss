@@ -255,7 +255,7 @@ input {
 	// width: 100%;
 	height: 70%;
 	left: 35%;
-	z-index: 1;
+	// z-index: 1;
 
 }
 
@@ -342,7 +342,7 @@ input {
 }
 
 .quiz-title {
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 }
 
 .mobile-quiz-result-title {
@@ -354,8 +354,8 @@ input {
 }
 
 .q-con {
-	width: 150px;
-	height: 150px;
+	width: 125px;
+	height: 125px;
 }
 
 }
@@ -377,16 +377,19 @@ input {
 
 #organ-heart {
 	right: -25%;
-    width: 20%;
+    // width: 20%;
+    height: 100%;
 }
 
 #organ-lungs {
-    width: 30%;
+    // width: 30%;
+    height: 100%;
     right: -30%;
 }
 
 #organ-liver {
-    width: 30%;
+    // width: 30%;
+    height: 100%;
 }
 
 }

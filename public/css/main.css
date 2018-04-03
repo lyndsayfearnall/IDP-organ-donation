@@ -43,7 +43,7 @@ p {
     font-size: 32px; }
 
   p {
-    font-size: 21px; } }
+    font-size: 18px; } }
 @media screen and (min-width: 1900px) {
   h1 {
     font-size: 36px; }
@@ -167,7 +167,7 @@ button:focus {
   position: relative;
   margin-left: 25px;
   margin-right: 25px;
-  z-index: 100; }
+  z-index: 700; }
 
 #donor-button {
   background-color: white;
@@ -177,7 +177,8 @@ button:focus {
   width: 175px;
   height: 35px;
   border-radius: 8px;
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  z-index: 600; }
 
 #donor-button p {
   color: black;
@@ -261,15 +262,13 @@ button:focus {
     width: 60%; }
 
   .organ-group {
-    width: 35%;
+    width: 40%;
     top: 120px; }
 
   #home-text-wrapper {
     width: 65%;
-    top: 25%; }
-    #home-text-wrapper h1 {
-      font-size: 36px;
-      margin-top: 35px; }
+    top: 25%;
+    margin-top: 25px; }
     #home-text-wrapper p {
       margin-bottom: 35px; }
 
@@ -471,6 +470,44 @@ video {
 #browser-hair-character {
   display: none; }
 
+.faqs-wrapper {
+  transition: background 1s ease; }
+
+#faq-1 {
+  height: 100vh; }
+
+#faq-2 {
+  height: 100vh; }
+
+#faq-3 {
+  height: 100vh; }
+
+#faq-4 {
+  height: 100vh; }
+
+.faqs-content-con {
+  position: relative; }
+
+.mobile-faqs-character {
+  width: 100%;
+  position: absolute;
+  height: auto;
+  margin-top: 25px; }
+
+#mobile-hair {
+  left: 50%;
+  transform: translateX(-50%); }
+
+#mobile-party {
+  height: 65%;
+  padding-bottom: 25px; }
+
+.faqs-character {
+  display: none; }
+
+.faqs-animate {
+  opacity: 0; }
+
 @media screen and (min-width: 375px) {
   #hair-character {
     width: 100vw; } }
@@ -484,17 +521,75 @@ video {
 
   .faqs-text-wrapper {
     width: 45%;
-    bottom: unset; } }
+    bottom: unset; }
+
+  .mobile-faqs-character {
+    display: none; } }
 @media screen and (min-width: 575px) {
   .faqs-text-wrapper {
     top: 50%;
     transform: translateY(-50%);
-    margin-left: 50px; }
+    margin-left: 50px;
+    position: relative; }
     .faqs-text-wrapper .faqs-title {
       font-size: 32px;
       text-align: left; }
     .faqs-text-wrapper p {
-      text-align: left; } }
+      text-align: left; }
+    .faqs-text-wrapper .right-text {
+      text-align: right !important; }
+    .faqs-text-wrapper .right-text-con {
+      float: right; }
+
+  .faqs-wrapper {
+    transition: background 1s ease; }
+
+  #faq-1 {
+    height: 100vh; }
+
+  #faq-2 {
+    height: 100vh; }
+
+  #faq-3 {
+    height: 100vh; }
+
+  #faq-4 {
+    height: 100vh; }
+
+  .right-text {
+    text-align: right !important; }
+
+  .right-text-con {
+    float: right; }
+
+  .faqs-character {
+    display: block;
+    width: 45%;
+    position: relative;
+    top: 20%;
+    transform: translateY(-20%); }
+
+  #hair {
+    float: right;
+    opacity: 0; }
+
+  #marathon {
+    float: right;
+    opacity: 0; }
+
+  #hobby {
+    opacity: 0; }
+
+  #party {
+    opacity: 0; }
+
+  .right-text-con {
+    float: right;
+    position: absolute;
+    right: 0; }
+
+  #party {
+    margin-left: 50px; } }
 @media screen and (min-width: 1280px) {
   .faqs-text-wrapper {
     width: 35%;
@@ -702,8 +797,7 @@ input {
     position: fixed;
     top: 0;
     height: 70%;
-    left: 35%;
-    z-index: 1; } }
+    left: 35%; } }
 @media screen and (min-width: 1024px) {
   .quiz-confetti {
     height: 100%; }
@@ -767,7 +861,7 @@ input {
     width: 45%; }
 
   .quiz-title {
-    margin-bottom: 100px; }
+    margin-bottom: 50px; }
 
   .mobile-quiz-result-title {
     display: none; }
@@ -776,8 +870,8 @@ input {
     display: block; }
 
   .q-con {
-    width: 150px;
-    height: 150px; } }
+    width: 125px;
+    height: 125px; } }
 @media screen and (min-width: 1280px) {
   .quiz-wrapper {
     height: 425px; }
@@ -790,14 +884,14 @@ input {
 
   #organ-heart {
     right: -25%;
-    width: 20%; }
+    height: 100%; }
 
   #organ-lungs {
-    width: 30%;
+    height: 100%;
     right: -30%; }
 
   #organ-liver {
-    width: 30%; } }
+    height: 100%; } }
 @media screen and (min-width: 1900px) {
   .quiz-wrapper {
     height: 625px; }
@@ -836,7 +930,7 @@ input {
   margin-left: 25px;
   margin-right: 25px;
   padding-top: 50px;
-  z-index: 1000; }
+  z-index: 600; }
 
 .sm-icon {
   width: 15%;
